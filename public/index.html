@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html ng-app="MyApp">
+<head>
+	<title>Learning Angular</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+	<script src="app/app.js"></script>
+	<script src="app/controller/MainController.js"></script>
+	<script src="app/services/DataProvider.js"></script>	
+</head>
+<body ng-controller="MainController as main">
+	<div>{{main.text}}</br>{{main.otherText}}</div>
+	<button ng-click="main.getData()">Get Data</button>
+</body>
+</html>
